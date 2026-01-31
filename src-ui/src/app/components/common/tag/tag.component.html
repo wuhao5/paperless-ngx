@@ -4,10 +4,10 @@
       &nbsp;&gt;&nbsp;
   }
   @if (!clickable) {
-    <span class="badge cursor-pointer whitespace-normal break-words text-left" [style.background]="tag.color" [style.color]="tag.text_color">{{tag.name}}</span>
+    <span class="badge" [class]="badgeClasses" [style.background]="tag.color" [style.color]="tag.text_color">{{tag.name}}</span>
   }
   @if (clickable) {
-    <a [title]="linkTitle" class="badge cursor-pointer whitespace-normal break-words text-left" [style.background]="tag.color" [style.color]="tag.text_color">{{tag.name}}</a>
+    <a [title]="linkTitle" class="badge" [class]="badgeClasses" [style.background]="tag.color" [style.color]="tag.text_color">{{tag.name}}</a>
   }
 } @else if (loading) {
   <span class="placeholder-glow">
@@ -17,9 +17,9 @@
   </span>
 } @else {
   @if (!clickable) {
-    <span class="badge private cursor-pointer whitespace-normal break-words text-left" i18n>Private</span>
+    <span class="badge private" [class]="badgeClasses" i18n>Private</span>
   }
   @if (clickable) {
-    <a [title]="linkTitle" class="badge private cursor-pointer whitespace-normal break-words text-left" i18n>Private</a>
+    <a [title]="linkTitle" class="badge private" [class]="badgeClasses" i18n>Private</a>
   }
 }
