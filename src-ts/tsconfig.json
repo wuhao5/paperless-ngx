@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "commonjs",
+    "lib": ["ES2022"],
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "./src",
+    "paths": {
+      "@/*": ["*"],
+      "@common/*": ["common/*"],
+      "@paperless/*": ["paperless/*"],
+      "@documents/*": ["documents/*"],
+      "@paperless_mail/*": ["paperless_mail/*"],
+      "@paperless_ai/*": ["paperless_ai/*"],
+      "@paperless_tesseract/*": ["paperless_tesseract/*"],
+      "@paperless_text/*": ["paperless_text/*"],
+      "@paperless_tika/*": ["paperless_tika/*"],
+      "@paperless_remote/*": ["paperless_remote/*"]
+    }
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
+}
