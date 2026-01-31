@@ -19,6 +19,9 @@ export class TagComponent {
   private _tag: Tag
   private _tagID: number
 
+  // Common Tailwind classes for badge styling
+  readonly badgeClasses = 'cursor-pointer whitespace-normal break-words text-left'
+
   @Input()
   public set tag(tag: Tag) {
     this._tag = tag

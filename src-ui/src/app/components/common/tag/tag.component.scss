@@ -1,9 +1,5 @@
-a, span {
-    cursor: pointer;
-    white-space: normal;
-    word-break: break-word;
-    text-align: start;
-}
+/* Base styles handled by Tailwind classes in template:
+   cursor-pointer, whitespace-normal, break-words, text-left */
 
 .private {
     background-color: #000000;
