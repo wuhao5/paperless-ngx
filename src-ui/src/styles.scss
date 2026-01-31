@@ -11,6 +11,7 @@ $form-file-button-hover-bg: var(--pngx-bg-alt);
 @include meta.load-css("theme");
 @import "@ng-select/ng-select/themes/default.theme.css";
 @include meta.load-css("print");
+@import "tailwind.css";
 
 // re-created bootstrap styles
 .mt-n2 {
